@@ -17,9 +17,25 @@ body {
 }
 
 .title h3 {
-    color: #fc831e;
+    color: #060606;
+    font-weight: bold;
+    font-size: 40px;
 }
-
+a{
+    text-decoration: none;
+}
+.btn-style{
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    font-weight: bold;
+    background-color: #fc831e;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
 /* DARK THEME */
 
 /* Light theme */
@@ -78,4 +94,35 @@ body {
 /* FARMCAROUSEL */
 .farmcarousel__left__content .farm__text{
     color: #f4f4f4;
+}
+/* BLOCK   */
+.block .block__unit{
+    margin-top: 30px;
+}
+.block .block__content{
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 32px 16px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in;
+}
+.block .block__content:hover{
+    border:1px solid #eee;
+    transition: 0.3s ease-in;
+    box-shadow: -1px 2px 12px -9px rgb(0 0 0 / 41%);
+    background: #fff;
+}
+.block .block__content h4{
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: bold;
+}
+.block .block__content:hover h4{
+    transition: 0.3s ease-in;
+    color: #009f4d;
+}
+.block .block__content p{
+    margin-top: 10px;
+    color: gray;
 }
