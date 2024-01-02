@@ -28,8 +28,10 @@ body {
 }
 
 #switchButton {
-    background-color: white;
-    border: 1px solid black;
+    background-color: transparent;
+    border: 1px solid transparent;
+    height: 38px;
+    width: 45px;
 }
 
 #switchButton .fa-sun {
@@ -46,8 +48,8 @@ body {
 }
 
 .dark #switchButton {
-    background-color: black;
-    border: 1px solid white;
+    background-color: transparent;
+    border: 1px solid transparent;
 }
 
 .dark #switchButton .fa-sun {
@@ -59,9 +61,27 @@ body {
     display: none;
 }
 
+.fa-sun,
+.fa-moon {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+
+
+
 
 
 /* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: black;
+}
+
 .dropdown-menu .dropdown-item.active {
     color: #fc831e;
     background-color: transparent;
@@ -75,7 +95,26 @@ body {
     border: none;
 }
 
+.navbar-brand{
+    color: #fc831e;
+}
+
+.navbar-brand span {
+    font-size: 32px;
+    /* color: #fc831e; */
+}
+
+.navbar-brand .fa-leaf {
+    position: absolute;
+    top: 13px;
+    left: 61px;
+    font-size: 20px;
+    
+    /* color: #fc831e; */
+}
+
+
 /* FARMCAROUSEL */
-.farmcarousel__left__content .farm__text{
+.farmcarousel__left__content .farm__text {
     color: #f4f4f4;
 }
