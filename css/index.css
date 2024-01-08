@@ -9,6 +9,8 @@ html,
 body {
     font-size: 16px;
     line-height: 1.5;
+    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Volkhov', serif;
 }
 
 .title h5 {
@@ -32,6 +34,7 @@ p {
     color: #707070;
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 .btn-style {
@@ -104,15 +107,24 @@ p {
 .fa-moon {
     background-color: transparent;
     border: none;
-    color: white;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 22px;
+    text-align: center;
+    line-height: 10px;
 }
 
 /* HEADER */
-header {
-    /* position: fixed; */
-    width: 100%;
-    z-index: 100;
-    background-color: black;
+.main-header {
+    background-color: rgba(128, 128, 128, 0.196);
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
 
 .dropdown-menu .dropdown-item.active {
@@ -130,46 +142,95 @@ header {
 
 .navbar-brand {
     color: #fc831e;
-}
-
-.navbar-brand span {
     font-size: 32px;
-    /* color: #fc831e; */
+    padding: 0;
+    position: relative;
+    transition: all .5s;
 }
 
 .navbar-brand .fa-leaf {
     position: absolute;
-    top: 13px;
-    left: 61px;
+    top: -7px;
+    left: 56px;
     font-size: 20px;
+}
 
-    /* color: #fc831e; */
+.navbar-brand:hover {
+    color: #060606;
+}
+
+.search-right input[type=search] {
+    background: #fff url(../img/search.png) no-repeat 10px center;
+    border: 1px solid #eee;
+    padding: 0 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 10em;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#demo-2 input[type=search]:focus {
+    width: 200px;
+    padding-left: 32px;
+    padding-right: 15px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+}
+
+.container .navbar {
+    padding: 0;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    font-size: 2em;
+}
+
+@media screen and (min-width: 1280px) {
+    .main-header .container {
+        max-width: 1200px;
+    }
+}
+
+/* FARMCAROUSEL */
+.farmcarousel__right .carousel-item {
+    height: 100vh;
 }
 
 
-/* FARMCAROUSEL */
-
-/* .farmcarousel__left{
+.farmcarousel__left {
     position: absolute;
     left: 10em;
     z-index: 1;
-} */
+}
 
 .farmcarousel__left h2 {
-    color: grey;
-    font-size: 120px;
+    color: #f4f4f4;
+    font-size: 100px;
     font-weight: bold;
-    margin-left: -0.5em;
+    margin-left: -0.48em;
 }
 
 .farmcarousel h3 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 60px;
     font-weight: bold;
 }
 
 .farm__content p {
     font-size: 20px;
+}
+
+.carousel-control-next .carousel-control-next-icon,
+.carousel-control-prev .carousel-control-prev-icon {
+    background-image: none;
+}
+
+.farm__content {
+    position: absolute;
+    top: 90px;
 }
 
 /* GROW */
@@ -218,16 +279,17 @@ header {
     position: relative;
 }
 
-.services__up .row{
+.services__up .row {
     align-items: center;
-} 
+}
 
 .services .services__up .row .col-md-6 h5,
-.services .services__up .row .col-md-6 h3, .services .services__up .row .col-md-6 p {
+.services .services__up .row .col-md-6 h3,
+.services .services__up .row .col-md-6 p {
     color: white;
 }
 
-.services__up p:first-of-type{
+.services__up p:first-of-type {
     font-size: 20px;
     font-weight: 300;
 }
@@ -246,21 +308,21 @@ header {
     font-size: 12vw;
 }
 
-.services__down .card img{
+.services__down .card img {
     border-radius: 20px 20px 0 0;
 }
 
-.card{
+.card {
     border-radius: 20px;
     border: none;
 }
 
-.services__detail{
+.services__detail {
     padding: 30px 20px;
     box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
 }
 
-.services span.label-style{
+.services span.label-style {
     color: #009f4d;
     background: rgb(0 159 77 / 16%);
     padding: 5px 20px;
@@ -268,7 +330,7 @@ header {
     border-radius: 15px;
 }
 
-.card-title{
+.card-title {
     display: block;
     font-size: 24px;
     line-height: 30px;
@@ -277,33 +339,33 @@ header {
     transition: all .5s;
 }
 
-.card-title:hover{
+.card-title:hover {
     text-decoration: none;
     color: #009f4d;
 }
 
 /* QUALITY */
-.mt-3{
+.mt-3 {
     margin: 10px 0 0;
     font-size: 17px;
 }
 
-.grid__info i.fa-solid{
+.grid__info i.fa-solid {
     font-size: 30px;
     color: #fc831e;
 }
 
-.grid__info h4{
+.grid__info h4 {
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-.radius-image{
+.radius-image {
     border-radius: 30px;
 }
 
-.imginfo__box{
+.imginfo__box {
     background-color: #fc831e;
     color: #fff;
     position: absolute;
@@ -316,14 +378,14 @@ header {
     text-align: center;
 }
 
-.imginfo__box .imginfo__title{
+.imginfo__box .imginfo__title {
     font-size: 70px;
     line-height: 80px;
     color: #fff;
     font-weight: 600;
 }
 
-.imginfo__box p{
+.imginfo__box p {
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
