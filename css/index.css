@@ -22,6 +22,7 @@ h6 {
     margin: 0;
     padding: 0;
     clear: both;
+     font-family: 'Volkhov', serif;
 }
 
 
@@ -100,7 +101,7 @@ p {
 
 /* Dark Theme*/
 .dark#myBody {
-    background-color: black;
+    background-color: rgb(34, 34, 34);
 }
 
 .dark #switchButton {
@@ -117,12 +118,89 @@ p {
     display: none;
 }
 
+.dark .navbar-brand:hover{
+    color: white;
+}
+
+
+/* .dark .main-header {
+    padding: 0px;
+    border-bottom: none;
+    z-index: 99 !important;
+    background-color: #222222;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    height: 70px;
+} */
+
+.dark h3,.dark h4, .dark .grid__icon h4 a,.dark .card-title, .dark footer .footer__main h3{
+    color: white;
+}
+.dark .farmcarousel__left h2{
+    color: black;
+}
+
+.dark .block .block__content:hover{
+    border: 1px solid rgb(255 255 255 / 20%);
+    transition: 0.3s ease-in;
+    background: #222222;
+}
+
+.dark .services__detail{
+    background: #222222;
+    padding: 30px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+    border: 1px solid rgb(255 255 255 / 20%);
+    border-top: none;
+}
+
+.dark .grid__icon {
+    padding: 40px 30px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgb(23,19,19);
+    background-color: #222222;
+    transition: all .3s;
+}
+
+.dark .grid__icon:hover {
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.dark .dropdown-menu.show{
+    background-color: #222222;
+}
+
+.dark .dropdown-menu.show a{
+   color: #fff;
+   font-family: 'Source Sans 3', sans-serif;
+}
+
+.dark .dropdown-menu .dropdown-item.active {
+    color: #fc831e;
+    background-color: transparent;
+}
+
+.dark .dropdown-menu .dropdown-item:hover{
+    background-color: transparent;
+    color: #fb811e;
+}
+
 .fa-sun,
 .fa-moon {
     background-color: transparent;
     border: none;
     font-size: 24px;
+    transition: all .2s;
 }
+
+.fa-sun:hover,
+.fa-moon:hover {
+    color: #fb811e;
+}
+
+
 
 .navbar-nav .nav-link {
     font-size: 22px;
@@ -146,6 +224,24 @@ p {
     background-color: transparent;
 }
 
+.dropdown-menu .dropdown-item{
+    display: block;
+    padding: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #060606;
+    width: 232px;
+    height: 38px;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: transparent;
+    color: #fb811e;
+}
+
 .dropdown-menu a {
     text-transform: uppercase;
 }
@@ -153,6 +249,15 @@ p {
 .nav-item .dropdown-toggle::after {
     border: none;
 }
+
+.dropdown .dropdown-menu{
+   
+}
+
+.dropdown .dropdown-menu.show{
+   border: none;
+}
+
 
 .navbar-brand {
     color: #fc831e;
@@ -198,6 +303,10 @@ p {
     justify-content: space-between;
 }
 
+
+.fa-bars{
+    color: #fff;
+}
 .navbar h1 {
     font-size: 2em;
 }
@@ -943,7 +1052,10 @@ button.owl-dot span {
 
 button.owl-dot.active span {
     background-color: #fb811e;
+}
 
+button.owl-dot:hover span{
+    background-color: #fb811e;
 }
 
 span i.fa-quote-left {
