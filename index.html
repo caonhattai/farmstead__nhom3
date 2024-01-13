@@ -111,23 +111,23 @@
                     </div>
 
                     <div>
-                    <ul class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item active" href="#">home</a>
-                            <a class="dropdown-item" href="#">about</a>
-                            <a class="dropdown-item" href="#">services</a>
-                            <a class="dropdown-item" href="#">blog posts</a>
-                            <a class="dropdown-item" href="#">landing page</a>
-                            <a class="dropdown-item" href="#">element page</a>
-                            <a class="dropdown-item" href="#">404 page</a>
-                            <a class="dropdown-item" href="#">contact</a>
-                        </div>
-                    </ul>
-                </div>
+                        <ul class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item active" href="#">home</a>
+                                <a class="dropdown-item" href="#">about</a>
+                                <a class="dropdown-item" href="#">services</a>
+                                <a class="dropdown-item" href="#">blog posts</a>
+                                <a class="dropdown-item" href="#">landing page</a>
+                                <a class="dropdown-item" href="#">element page</a>
+                                <a class="dropdown-item" href="#">404 page</a>
+                                <a class="dropdown-item" href="#">contact</a>
+                            </div>
+                        </ul>
+                    </div>
 
 
                     <!-- <ul class="navbar-nav ml-auto align-items-center">
@@ -214,7 +214,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
                             data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
@@ -223,7 +223,7 @@
                             data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
-                        </button> -->
+                        </button>
                     </div>
                 </div>
             </div>
@@ -806,6 +806,37 @@
     <script src="./js//main.js"></script>
     <script src="./js/util.js"></script>
     <!-- BACK TO TOP -->
+
+    <!-- FANCYBOX -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            Infinite: false,
+            animated: true,
+            Thumbs: {
+                type: "classic",
+            },
+            Toolbar: {
+                display: {
+                    left: ["infobar"],
+                    middle: [],
+                    right: ["close"],
+                },
+            },
+
+        });
+
+    </script>
+    <!-- FANCYBOX -->
+
+
+
+
+
+
+
+
 
 
 </body>

@@ -22,7 +22,7 @@ h6 {
     margin: 0;
     padding: 0;
     clear: both;
-     font-family: 'Volkhov', serif;
+    font-family: 'Volkhov', serif;
 }
 
 
@@ -118,7 +118,7 @@ p {
     display: none;
 }
 
-.dark .navbar-brand:hover{
+.dark .navbar-brand:hover {
     color: white;
 }
 
@@ -132,20 +132,25 @@ p {
     height: 70px;
 } */
 
-.dark h3,.dark h4, .dark .grid__icon h4 a,.dark .card-title, .dark footer .footer__main h3{
+.dark h3,
+.dark h4,
+.dark .grid__icon h4 a,
+.dark .card-title,
+.dark footer .footer__main h3 {
     color: white;
 }
-.dark .farmcarousel__left h2{
+
+.dark .farmcarousel__left h2 {
     color: black;
 }
 
-.dark .block .block__content:hover{
+.dark .block .block__content:hover {
     border: 1px solid rgb(255 255 255 / 20%);
     transition: 0.3s ease-in;
     background: #222222;
 }
 
-.dark .services__detail{
+.dark .services__detail {
     background: #222222;
     padding: 30px 20px;
     border-bottom-left-radius: 20px;
@@ -159,7 +164,7 @@ p {
     padding: 40px 30px;
     border-radius: 30px;
     text-align: center;
-    box-shadow: 0 1rem 3rem rgb(23,19,19);
+    box-shadow: 0 1rem 3rem rgb(23, 19, 19);
     background-color: #222222;
     transition: all .3s;
 }
@@ -168,13 +173,13 @@ p {
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
 }
 
-.dark .dropdown-menu.show{
+.dark .dropdown-menu.show {
     background-color: #222222;
 }
 
-.dark .dropdown-menu.show a{
-   color: #fff;
-   font-family: 'Source Sans 3', sans-serif;
+.dark .dropdown-menu.show a {
+    color: #fff;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 .dark .dropdown-menu .dropdown-item.active {
@@ -182,7 +187,7 @@ p {
     background-color: transparent;
 }
 
-.dark .dropdown-menu .dropdown-item:hover{
+.dark .dropdown-menu .dropdown-item:hover {
     background-color: transparent;
     color: #fb811e;
 }
@@ -218,7 +223,7 @@ p {
     background-color: transparent;
 }
 
-.dropdown-menu .dropdown-item{
+.dropdown-menu .dropdown-item {
     display: block;
     padding: 7px;
     text-align: center;
@@ -231,7 +236,7 @@ p {
     height: 38px;
 }
 
-.dropdown-menu .dropdown-item:hover{
+.dropdown-menu .dropdown-item:hover {
     background-color: transparent;
     color: #fb811e;
 }
@@ -244,9 +249,9 @@ p {
     border: none;
 }
 
-.dropdown .dropdown-menu.show{
-   border: none;
-   transform: translateX(-195px);
+.dropdown .dropdown-menu.show {
+    border: none;
+    transform: translateX(-195px);
 }
 
 
@@ -295,9 +300,10 @@ p {
 }
 
 
-.fa-bars{
+.fa-bars {
     color: #fff;
 }
+
 .navbar h1 {
     font-size: 2em;
 }
@@ -307,7 +313,7 @@ p {
     margin: 0 10px;
 }
 
-ul.nav-item{
+ul.nav-item {
     margin: 0;
     font-size: 22px;
 }
@@ -755,43 +761,43 @@ ul.nav-item{
 }
 
 @media (max-width: 991px) {
-   .quality .small-title {
+    .quality .small-title {
         font-size: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .quality .small-title {
-         font-size: 18px;
-     }
- }
+        font-size: 18px;
+    }
+}
 
- @media (max-width: 991px) {
+@media (max-width: 991px) {
     .quality .small-title-1 {
         font-size: 35px;
         line-height: 45px;
-     }
- }
+    }
+}
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .quality .small-title-1 {
         font-size: 32px;
         line-height: 42px;
-     }
- }
+    }
+}
 
- @media (max-width: 568px) {
+@media (max-width: 568px) {
     .quality .small-title-1 {
         font-size: 30px;
         line-height: 40px;
-     }
- }
-
- @media (max-width: 738px){
-.imginfo__box {
-    left: -50px;
+    }
 }
- }
+
+@media (max-width: 738px) {
+    .imginfo__box {
+        left: -50px;
+    }
+}
 
 
 
@@ -901,7 +907,10 @@ ul.nav-item{
     }
 }
 
-
+.fancybox__infobar span {
+    font-size: 16px;
+    color: #fff;
+}
 
 
 .gallery .gallery__item .small__title {
@@ -918,10 +927,10 @@ ul.nav-item{
     margin: 20px;
 }
 
-@media screen and (max-width: 1200px){
-.block .block__unitt {
-    padding: 1.5rem 0.5rem;
-}
+@media screen and (max-width: 1200px) {
+    .block .block__unitt {
+        padding: 1.5rem 0.5rem;
+    }
 }
 
 /* responsive  */
@@ -1055,7 +1064,7 @@ button.owl-dot.active span {
     background-color: #fb811e;
 }
 
-button.owl-dot:hover span{
+button.owl-dot:hover span {
     background-color: #fb811e;
 }
 
