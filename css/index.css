@@ -202,12 +202,6 @@ p {
 
 
 
-.navbar-nav .nav-link {
-    font-size: 22px;
-    text-align: center;
-    line-height: 10px;
-}
-
 /* HEADER */
 .main-header {
     background-color: rgba(128, 128, 128, 0.196);
@@ -252,7 +246,7 @@ p {
 
 .dropdown .dropdown-menu.show{
    border: none;
-   transform: translateX(-204px);
+   transform: translateX(-195px);
 }
 
 
@@ -295,7 +289,7 @@ p {
     cursor: auto;
 }
 
-.container .navbar {
+.navbar {
     padding: 0;
     justify-content: space-between;
 }
@@ -306,6 +300,16 @@ p {
 }
 .navbar h1 {
     font-size: 2em;
+}
+
+
+.navbar .search-right {
+    margin: 0 10px;
+}
+
+ul.nav-item{
+    margin: 0;
+    font-size: 22px;
 }
 
 @media (min-width: 1280px) {
