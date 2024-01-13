@@ -250,12 +250,9 @@ p {
     border: none;
 }
 
-.dropdown .dropdown-menu{
-   
-}
-
 .dropdown .dropdown-menu.show{
    border: none;
+   transform: translateX(-204px);
 }
 
 
